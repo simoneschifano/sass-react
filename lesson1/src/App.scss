@@ -1,0 +1,61 @@
+// @import "./scss/variables/colors.scss";
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  // background-color: $colorBackground;
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+
+  // .element {
+  //   @include centerPosition();
+  //   @include size(100%, 40px);
+  //   background-color: yellow;
+  // }
+
+  // ul {
+  //   color: $colorText;
+  //   margin: $margin;
+  // }
+}
+
+ul {
+  color: yellow;
+  font-size: 11px;
+}
+
+li {
+  font-size: rem(37px);
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  @include xs {
+    background: purple;
+    @include size(40px, 100px);
+  }
+
+  @include sm {
+    background: yellow;
+    @include size(40rem, 100px);
+  }
+
+  @include md {
+    background: green;
+  }
+
+  @include lg {
+    background: violet;
+  }
+
+  @include xl {
+    background: orange;
+  }
+}
