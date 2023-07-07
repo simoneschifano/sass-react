@@ -1,0 +1,26 @@
+.Hero {
+  position: relative;
+}
+
+.swiper {
+  height: 100vh;
+  width: 100%;
+  //   background-color: red;
+}
+
+.navigation {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  &.prevButton {
+    left: 0;
+  }
+  &.nextButton {
+    right: 0;
+  }
+}
